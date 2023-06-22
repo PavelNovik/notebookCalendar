@@ -1,0 +1,15 @@
+{
+  "name": "notebook_template",
+  "version": "1.0.0",
+  "description": "Проект записной книги календаря.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PawelNowik",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.8.1",
+    "sass": "^1.63.6"
+  }
+}
