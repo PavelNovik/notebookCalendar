@@ -9,7 +9,8 @@
     "kit": "parcel src/uikit.html --open",
     "build:uikit": "rm -rf build/uikit && parcel build src/uikit.html --out-dir build/uikit",
     "build": "rm -rf build/uikit && parcel build src/index.html --out-dir build/www",
-    "server": "json-server --watch db.json --port 8080"
+    "server": "json-server --watch db.json --port 8080",
+    "work": "concurrently \"json-server --watch src/db.json\" \"parcel src/index.html --open\""
   },
   "author": "PawelNowik",
   "license": "ISC",
@@ -17,5 +18,8 @@
     "json-server": "^0.17.3",
     "parcel-bundler": "^1.8.1",
     "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
   }
 }
