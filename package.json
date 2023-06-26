@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/index.html --open",
-    "kit": "parcel src/uikit.html --open",
+    "dev": "parcel src/index.html --open --port 8080",
+    "kit": "parcel src/uikit.html --open --port 8080",
     "build:uikit": "rm -rf build/uikit && parcel build src/uikit.html --out-dir build/uikit",
     "build": "rm -rf build/uikit && parcel build src/index.html --out-dir build/www",
-    "server": "json-server --watch db.json --port 8080",
-    "work": "concurrently \"json-server --watch src/db.json\" \"parcel src/index.html --open\""
+    "server": "json-server --watch src/db.json --port 8080",
+    "work": "concurrently \"json-server --watch src/db.json --port 8080\" \"parcel src/index.html --open --port 8080\"",
+    "start": "concurrently \"npm run server\" \"npm run dev\""
   },
   "author": "PawelNowik",
   "license": "ISC",
