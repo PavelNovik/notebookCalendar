@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/styles/style.scss">
 </head>
 
@@ -13,7 +16,9 @@
 
         <header class="header">
             <!-- <h1>Hello world</h1> -->
-            <div class="header__logo"></div>
+            <div class="header__logo">
+                <img src="./assets/img/image.png" alt="Logo header">
+            </div>
             <div class="header__menu">
                 <ul class="header__menu-items">
                     <li class="header__menu-item">Home</li>
@@ -34,23 +39,50 @@
             <div class="my__information">
                 <h1>Hello! It's me.</h1>
                 <article>
-                    Hello everybody. My name is Pawel. I'm 36 years old. I like to take a programm and i'm working as
-                    engeneer. Now I'm working in <a href="http://interferm.by">Interferm</a> company as a
+                    Hello everybody. My name is Pawel. I'm 36 years old. I like to take a programm and i'm working as an
+                    engeneer. Now I'm working in the <a href="http://interferm.by">Interferm</a> company as a
                     cheef engeneer.
                     Our company based in the Sluck town in Belarus.
                     This foto was made in the WC room.
                 </article>
 
             </div>
-            <h2>Lorem ipsum dolor.</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum harum laboriosam laudantium ullam?
-                Ad
-                at deleniti earum error explicabo fugiat, fugit illo iure libero, nobis obcaecati pariatur perspiciatis
-                quod.</h3>
-            <h3>Wyhat news you have? my frend</h3>
+
         </section>
-        <section class="calendar" id="calendar"></section>
-        <footer class="footer"></footer>
+        <section class="calendar" id="calendar">
+            <h2 class="contacts__header">Calendar</h2>
+        </section>
+        <section class="work" id="work">
+            <h2 class="contacts__header">Work</h2>
+        </section>
+        <section class="todolist" id="todolist">
+            <h2 class="contacts__header">ToDo List</h2>
+        </section>
+        <section class="galery" id="galery">
+            <h2 class="contacts__header">Galery</h2>
+        </section>
+        <section class="contacts" id="contacts">
+            <h2 class="contacts__header">My contacts</h2>
+            <div class="contacts__list">
+                <p class="contacts__data"><i class="fa-solid fa-envelope"></i> brn2befree@gmail.com</p>
+                <p class="contacts__data"><i class="fa-solid fa-envelope"></i> brn2befree@hotmail.com</p>
+                <p class="contacts__data"><i class="fa-solid fa-mobile"></i> (A1): +375 29 348 24 04</p>
+                <p class="contacts__data"><i class="fa-solid fa-mobile"></i> (MTS): +375 29 270 06 15</p>
+                <p class="contacts__data"><i class="fa-brands fa-square-instagram"></i> Instagram / <i
+                        class="fa-brands fa-square-facebook"></i> Facebook: Pawel Nowik</p>
+                <p class="contacts__data"><i class="fa-solid fa-location-dot"></i> Belarus, Minsk reg., Slutsk,
+                    Lenina str., 154/ Postal code 223605</p>
+
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__logo">
+                <img src="./assets/img/No3-14-30-06-2023.png" alt="logo">
+            </div>
+            <div class="footer__authright">This WEB was designed and created by Nowik Pawieł &copy. <br> <br>Slutsk
+                2023
+            </div>
+        </footer>
     </main>
     <script src="../src/assets/scripts/index.js"></script>
 </body>
