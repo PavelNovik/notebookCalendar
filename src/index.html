@@ -9,6 +9,18 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/styles/style.scss">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+
+    </script>
 </head>
 
 <body>
@@ -49,8 +61,9 @@
             </div>
 
         </section>
-        <section class="calendar" id="calendar">
+        <section class="calendar">
             <h2 class="contacts__header">Calendar</h2>
+            <div class="calendar" id="calendar"></div>
         </section>
         <section class="work" id="work">
             <h2 class="contacts__header">Work</h2>
